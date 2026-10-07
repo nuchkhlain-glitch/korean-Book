@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booker</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playpen+Sans+Thai:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/icon.jpg" alt="Booker Logo" width="50" height="50" class="me-2">
+                    <span class="fs-3 fw-bold">Book</span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bookerNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="bookerNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#books">หนังสือ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">เกี่ยวกับเรา</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="files/book-sample.pdf" download="virus.pdf">
+                            ดาวน์โหลด
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- SECTION 1: BOOK SHOWCASE -->
+    <!-- ========================= -->
+    <section id="books" class="py-5">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+
+                <!-- คอลัมน์ที่ 1 : รูปเล็ก -->
+                <div class="col-sm-12 col-md-2">
+                    <div class="d-flex flex-column gap-3">
+                        <div>
+                            <img src="images/IMG_01.jpg" class="img-fluid border rounded" alt="รูป 1" >
+                        </div>
+                        <div>
+                            <img src="images/back.jpg" class="img-fluid border rounded" alt="รูป 2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- คอลัมน์ที่ 2 : รูปใหญ่ Hover Effect -->
+                <div class="col-sm-12 col-md-4 text-center">
+                    <div class="book-hover-wrapper">
+                        <img src="images/IMG_01.jpg" alt="ปกหน้า" class="front-cover">
+                        <img src="images/back.jpg" alt="ปกหลัง" class="back-cover">
+                    </div>
+                </div>
+
+                <!-- คอลัมน์ที่ 3 : ชื่อหนังสือ & ผู้เขียน -->
+                <div class="col-sm-12 col-md-6">
+                    <h1 class="book-title">พูดเกาหลี...ซะหน่อย</h1>
+                    <p class="book-author">ผู้เขียน: เทียร ธรรมดา</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- SECTION 2: เนื้อเรื่องย่อ -->
+    <!-- ========================= -->
+    <section class="book-description">
+        <div class="container px-5">
+            <p class="fs-5 lh-lg mb-0">
+                เริ่มพูดเกาหลีได้ง่ายกว่าที่คิด
+                แค่มีเล่มนี้ติดตัว "พูดเกาหลี....ซะหน่อย"
+                คือหนังสือที่ช่วยให้คุณสื่อสารภาษาเกาหลีได้
+                โดยไม่ต้องพื้นฐานมาก่อน
+                ด้วยการรวบรวมบทสนทนาง่าย ๆ ที่ใช้บ่อยในชีวิตประจำวัน
+                พร้อมภาพประกอบสวยงามที่ช่วยให้เข้าใจและจดจำคำศัพท์ได้เร็วขึ้น
+                ภายในเล่มอัดแน่นด้วยศัพท์ วลี และประโยคสำคัญ
+                สำหรับใช้สื่อสารระหว่างการเดินทางท่องเที่ยว
+                พร้อมคำอ่านที่ถอดเสียงให้ใกล้เคียงเจ้าของภาษา
+                ช่วยให้คุณกล้าพูด ใช้ได้จริง
+                และสนุกกับการเรียนรู้ภาษาเกาหลีตั้งแต่หน้าแรก
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- SECTION 3: เกี่ยวกับเรา -->
+    <!-- ========================= -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="display-6 fw-bold text-center">เปิดโลกภาษาและวัฒนธรรมเกาหลี</h2>
+
+            <!-- รูปภาพจัดกึ่งกลาง -->
+            <div class="text-center mb-4">
+                <img src="images/korea.jpg" alt="สิ่งที่ได้เรียนรู้จากหนังสือ" class="rounded" style="width: 3in; height: 3in; object-fit: cover;">
+            </div>
+
+            <!-- เนื้อหา -->
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <div class="description-box">
+                        <p class="fs-6 lh-lg mb-0">
+                            หนังสือเล่มนี้ให้ความรู้เกี่ยวกับภาษาเกาหลี และการสื่อสารในชีวิตประจำวัน
+                            ช่วยให้เราเข้าใจคำศัพท์และประโยคภาษาเกาหลี รวมถึงเรียนรู้วัฒนธรรมและวิถีชีวิตของชาวเกาหลี
+                            ทำให้สามารถนำความรู้ไปใช้ในการเรียน การท่องเที่ยว และการสื่อสารกับผู้อื่นได้จริง
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- SECTION 4: คำแนะนำ / Tip / ประโยชน์ -->
+    <!-- ========================= -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- คำแนะนำ -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="tip-box tip-pink">
+                        <h4 class="fw-bold d-flex align-items-center mb-3">
+                            <img src="images/recommended.png" alt="คำแนะนำ" class="rounded me-2" width="40" height="40">
+                            <span class="title-pink" data-aos="fade-right">คำแนะนำ</span>
+                        </h4>
+                        <p data-aos="zoom-in">• ใช้อย่างต่อเนื่องเพื่อผลลัพธ์ที่ดีที่สุด</p>
+                        <p data-aos="zoom-in">• เหมาะสำหรับผู้เริ่มต้นและเน้นสื่อสารพื้นฐาน</p>
+                        <p data-aos="zoom-in">• โปรดไม่ทำให้เปียกน้ำเพื่อยืดอายุหนังสือ</p>
+                    </div>
+                </div>
+
+                <!-- Tip -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="tip-box tip-yellow">
+                        <h4 class="fw-bold d-flex align-items-center mb-3">
+                            <img src="images/tips.png" alt="Tip" class="rounded me-2" width="40" height="40">
+                            <span class="title-pink"data-aos="fade-right">Tip...เทคนิคเล็ก ๆ</span>
+                        </h4>
+                        <p data-aos="zoom-in">• อ่านออกเสียงตามตัวอย่างเพื่อช่วยฝึกสำเนียง</p>
+                        <p data-aos="zoom-in">• ลองนำประโยคไปใช้จริงในชีวิตประจำวัน</p>
+                    </div>
+                </div>
+
+                <!-- ประโยชน์ -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="tip-box tip-blue">
+                        <h4 class="fw-bold d-flex align-items-center mb-3">
+                            <img src="images/benefit.jpg" alt="ประโยชน์" class="rounded me-2" width="40" height="40">
+                            <span class="title-pink"data-aos="fade-right">ประโยชน์ที่ได้รับ</span>
+                        </h4>
+                        <p data-aos="zoom-in">• ช่วยเพิ่มความเข้าใจภาษาเกาหลี</p>
+                        <p data-aos="zoom-in">• ฝึกการสื่อสารในชีวิตประจำวัน</p>
+                        <p data-aos="zoom-in">• สามารถนำไปใช้ในการท่องเที่ยว</p>
+                        <p data-aos="zoom-in">• เรียนรู้วัฒนธรรมเกาหลีมากขึ้น</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+    <section id="download" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-8 text-center">
+                    <p class="sasi fs-5 lh-lg mb-0">
+                        "หนังสือเล่มนี้มีคุณค่าในการช่วยให้ผู้อ่าน
+                        เรียนรู้ภาษาเกาหลี ฝึกทักษะการสื่อสาร
+                        และเข้าใจวัฒนธรรมเกาหลีมากขึ้น
+                        อีกทั้งยังสามารถนำความรู้ไปประยุกต์ใช้
+                        ในชีวิตประจำวัน การเรียน
+                        และการท่องเที่ยวได้จริง"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- คอลัมน์ที่ 1 -->
+            <div class="col-12 col-md-4">
+                <h5>ช่วยเหลือ</h5>
+                <p>คำถามที่พบบ่อย</p>
+            </div>
+
+            <!-- คอลัมน์ที่ 2 -->
+            <div class="col-12 col-md-4">
+                <h5>เกี่ยวกับเรา</h5>
+                <p>เกี่ยวกับ</p>
+                <p>ติดต่อและร้องเรียน</p>
+                <p>เงื่อนไขการใช้งาน</p>
+                <p>นโยบายการคุ้มครองข้อมูลส่วนบุคคล</p>
+            </div>
+
+            <!-- คอลัมน์ที่ 3 -->
+            <div class="col-12 col-md-4">
+                <h5>ติดตามข่าวสาร ได้ที่</h5>
+
+                <div class="d-flex gap-3 mb-3">
+                    <a href="#">LINE</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- FAQ Accordion Section -->
+<section class="container py-5">
+
+    <div class="accordion" id="faqAccordion">
+
+        <!-- ข้อที่ 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Q: ผมไม่ใช่สายกิจกรรม ไม่ชอบทำกิจกรรมเลย ไม่เข้ารับน้องได้ไหมครับ
+                </button>
+            </h2>
+
+            <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <strong>A:</strong>
+                    การรับน้องนั้น มีขึ้นเพื่อกระชับความสัมพันธ์กับเพื่อนใหม่ที่กำลังจะเข้ามาเรียนในคณะ
+                    หรือสาขาวิชาเอก-โทนี้ด้วยกัน แต่ไม่มีการบังคับให้เข้าร่วมกิจกรรมนี้นะครับ
+                    ดังนั้นไม่ต้องเข้าก็ได้ เพราะไม่มีผลอะไรกับการใช้ชีวิตในสาขาวิชานี้แน่นอน
+                </div>
+            </div>
+        </div>
+
+        <!-- ข้อที่ 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Q: แล้วกิจกรรมรับน้องของคณะ และรับน้องของเอก-โทของที่นี่มีโซตัสไหมคะ
+                </button>
+            </h2>
+
+            <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <strong>A:</strong>
+                    ที่นี่ไม่มีโซตัสทั้งรับน้องของคณะ และรับน้องของเอก-โท
+                    ดังนั้นไม่ต้องกังวลนะคะ
+                </div>
+            </div>
+        </div>
+
+        <!-- ข้อที่ 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Q: เคยได้ยินว่าเอกนี้มี "กิจกรรมห้องสมุดเคลื่อนที่"
+                    ซึ่งเป็นกิจกรรมที่เป็นไฮไลท์เด็ดของภาควิชา
+                    แต่ถ้าไม่อยากเข้าร่วมกิจกรรมนี้ จะมีปัญหาอะไรไหมครับ
+                </button>
+            </h2>
+
+            <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <strong>A:</strong>
+                    จริง ๆ ทางภาควิชาไม่ได้บังคับ แต่ "ขอความร่วมมือ"
+                    ดังนั้นเข้าร่วมเพื่อกิจกรรมเอาไว้ใส่ในแฟ้มรวบรวมผลงาน
+                    เพื่อสั่งสมประสบการณ์ก็ดีครับ
+                </div>
+            </div>
+        </div>
+
+        <!-- ข้อที่ 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour">
+                    Q: ไม่ประสงค์ฝึกงานได้ไหมคะ
+                </button>
+            </h2>
+
+            <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <strong>A:</strong>
+                    ถ้าเป็นเด็ก "เอก" นี้ จะต้องฝึกงานนะคะ
+                    เพราะต้องนำประสบการณ์ที่ได้จากการฝึกงานไปเรียนต่อในรายวิชา
+                    "สัมมนาการฝึกปฏิบัติงาน" เป็นวิชาบังคับ
+                    ซึ่งจะต้องนับเป็นหน่วยกิตก่อนจบการศึกษาด้วย
+                    แต่ถ้าเป็นเด็ก "โท" ไม่จำเป็นต้องฝึกงานค่ะ
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- Carousel Section -->
+<section class="container py-5">
+
+    <div id="carouselExampleIndicators"
+         class="carousel slide"
+         data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
+
+            <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+            <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Images -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/c1 (1).jpg"
+                     class="d-block w-100"
+                     alt="ภาพที่ 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/ko1.webp"
+                     class="d-block w-100"
+                     alt="ภาพที่ 2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/ko2.jpg"
+                     class="d-block w-100"
+                     alt="ภาพที่ 3">
+            </div>
+
+        </div>
+
+        <!-- ปุ่มย้อนกลับ -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <!-- ปุ่มถัดไป -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+</section>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+</body>
+
+</html>

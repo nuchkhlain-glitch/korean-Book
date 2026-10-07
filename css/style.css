@@ -1,0 +1,157 @@
+/* ==========================================================================
+   1. TYPOGRAPHY & BASE STYLES
+   ========================================================================== */
+p {
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2, h3 {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    background-color: #f8f2bf;
+    color: #464141;
+    padding: 15px 25px;
+    text-align: center;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto 25px;
+    border-radius: 50px;
+}
+
+.sasi {
+    font-family: "KoHo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+/* ==========================================================================
+   2. BOOK & HEADER STYLES
+   ========================================================================== */
+h1, .book-title {
+    background-color: #f5aecf;
+    color: #f9f2f6;
+    padding: 15px 25px;
+    display: inline-block;
+    font-weight: 700;
+    font-family: "Playpen Sans Thai", cursive;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+.book-author {
+    font-size: 22px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.book-description {
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fafbf8;
+    padding: 50px 0;
+}
+
+/* ==========================================================================
+   3. COMPONENTS & CARDS
+   ========================================================================== */
+.title-pink {
+    background-color: #eb9de6;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 19px;
+}
+
+.description-box {
+    background-color: #fcf9de;
+    padding: 20px 25px;
+    border: 1px solid #eeeeee;
+}
+
+.tip-box {
+    padding: 25px;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.tip-box p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.tip-pink {
+    background-color: #fff0f5;
+}
+
+.tip-yellow {
+    background-color: #e4fbe9;
+}
+
+.tip-blue {
+    background-color: #eef7ff;
+}
+
+/* ==========================================================================
+   4. BOOK HOVER SWAP & ZOOM EFFECT
+   ========================================================================== */
+.book-hover-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.book-hover-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: opacity 0.4s ease;
+}
+
+.book-hover-wrapper .back-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.book-hover-wrapper:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.book-hover-wrapper:hover .front-cover {
+    opacity: 0;
+}
+
+.book-hover-wrapper:hover .back-cover {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   5. FOOTER
+   ========================================================================== */
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+}
+
+.footer p {
+    color: #000000;
+}
