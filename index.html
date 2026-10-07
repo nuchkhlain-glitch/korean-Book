@@ -221,69 +221,39 @@
         </div>
     </section>
 
-    <footer class="footer">
-    <div class="container">
-        <div class="row g-4">
-
-            <!-- คอลัมน์ที่ 1 -->
-            <div class="col-12 col-md-4">
-                <h5>ช่วยเหลือ</h5>
-                <p>คำถามที่พบบ่อย</p>
-            </div>
-
-            <!-- คอลัมน์ที่ 2 -->
-            <div class="col-12 col-md-4">
-                <h5>เกี่ยวกับเรา</h5>
-                <p>เกี่ยวกับ</p>
-                <p>ติดต่อและร้องเรียน</p>
-                <p>เงื่อนไขการใช้งาน</p>
-                <p>นโยบายการคุ้มครองข้อมูลส่วนบุคคล</p>
-            </div>
-
-            <!-- คอลัมน์ที่ 3 -->
-            <div class="col-12 col-md-4">
-                <h5>ติดตามข่าวสาร ได้ที่</h5>
-
-                <div class="d-flex gap-3 mb-3">
-                    <a href="#">LINE</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</footer>
 <!-- FAQ Accordion Section -->
 <section class="container py-5">
 
+    <!-- Add FAQ Header Here -->
+    <h2 class="faq-title">FAQ</h2>
+
     <div class="accordion" id="faqAccordion">
 
-        <!-- ข้อที่ 1 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Q:  หนังสือเล่มนี้ ใช้พูดกับคนเกาหลีได้คล่องไหม
-                </button>
-            </h2>
+<!-- ข้อที่ 1 -->
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="false"
+            aria-controls="collapseOne">
+            Q:  หนังสือเล่มนี้ ใช้พูดกับคนเกาหลีได้คล่องไหม
+        </button>
+    </h2>
 
-            <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    <strong>A:</strong>
-                    ได้แน่นอน ในการสนทนาทั่วไปค่ะ
-                </div>
-            </div>
+    <div
+        id="collapseOne"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingOne"
+        data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            <strong>A:</strong>
+            ได้แน่นอน ในการสนทนาทั่วไปค่ะ
         </div>
+    </div>
+</div>
 
         <!-- ข้อที่ 2 -->
         <div class="accordion-item">
@@ -311,7 +281,7 @@
             </div>
         </div>
 
-       
+    </div>
 
 </section>
     <!-- Bootstrap JavaScript -->
