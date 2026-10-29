@@ -14,7 +14,7 @@ h2, h3 {
 }
 
 h2 {
-    background-color: #f8f2bf;
+    background-color: #fdb9da;
     color: #464141;
     padding: 15px 25px;
     text-align: center;
@@ -144,18 +144,53 @@ h1, .book-title {
 }
 
 /* Override global h2 styles for the FAQ Accordion */
-#faqAccordion .accordion-header {
-    width: 100% !important;
-    margin: 0 !important;
-    text-align: left !important;
+/* AEO: กล่องคำถาม-คำตอบ */
+.description-box { padding: 24px clamp(16px, 4vw, 32px) 28px; }
+
+.qa-box {
+    padding: 18px 22px;
+    border-radius: 16px;
+    margin-top: 16px;
+    border-left: 5px solid var(--qa-line);
+    background: var(--qa-bg);
+}
+.qa-box h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 10px;
+    font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+    line-height: 1.4;
+    color: #464141;
+}
+.qa-box h3::before {
+    content: var(--qa-icon);
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.qa-box p {
+    margin: 0;
+    padding-left: 50px;
+    font-size: 1.05rem !important;
+    line-height: 1.9;
+    color: #4a4545;
+}
+@media (max-width: 575.98px) {
+    .qa-box { padding: 16px; }
+    .qa-box p { padding-left: 0; }
 }
 
-#faqAccordion .accordion-button {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-    text-align: left !important;
-    justify-content: flex-start !important;
-}
+.qa-1 { --qa-bg: #f8e6f8; --qa-line: #b77bd3; --qa-icon: "📖"; }
+.qa-2 { --qa-bg: #f8e6f8; --qa-line: #b77bd3; --qa-icon: "👥"; }
+.qa-3 { --qa-bg: #f8e6f8; --qa-line: #b77bd3; --qa-icon: "🌱"; }
+.qa-4 { --qa-bg: #f8e6f8; --qa-line: #b77bd3; --qa-icon: "⭐"; }
 
 /*add*/
 #books { position: relative; overflow: hidden; }
@@ -272,6 +307,33 @@ section, .tip-box {
 }
 
 /* Footer links */
-.footer a:hover { color: #eb81b2; }
-.footer p { transition: 0.2s; cursor: pointer; }
-.footer p:hover { color: #eb81b2; transform: translateX(5px); }
+/* Footer: headings (h2 visual = small bold) and real links */
+.footer-title {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    width: auto;
+    text-align: left;
+    border-radius: 0;
+    font-family: "Itim", cursive;
+    font-size: 1.25rem;
+}
+.footer-link { color: inherit; text-decoration: none; }
+.footer-link:hover { color: #eb81b2; }
+ 
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+ 
+/* Footer background: ชมพูอ่อน -> ม่วงอ่อน เข้ากับธีม */
+.footer {
+    background: linear-gradient(135deg, #fde8f1 0%, #efe3fb 100%)
+}
+    
